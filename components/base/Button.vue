@@ -11,7 +11,9 @@ defineProps<ButtonProps>()
 </script>
 
 <template>
-  <button
-    :class="color === 'green' ? 'bg-green-primary text-white' : 'bg-[#F2F2F2] text-black'"
-    class="px-[18px] py-[10px] rounded-full">{{ title }}</button>
+  <div>
+    <button
+      :class="color === 'green' ? 'bg-green-primary text-white' : 'bg-[#F2F2F2] text-black'"
+      class="px-[18px] py-[10px] rounded-full">{{ title }}</button>
+  </div>
 </template>
