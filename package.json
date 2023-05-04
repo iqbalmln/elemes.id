@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "@elemes.id/frontend-test",
+  "description": "@iqbalmln source code for technical test at elemes group",
+  "author": {
+    "email": "miqblmaulana@gmail.com",
+    "name": "Iqbal Maulana",
+    "url": "https://github.com/iqbalmln"
+  },
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "nuxt": "^3.4.3"
+  }
+}
