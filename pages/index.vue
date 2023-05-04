@@ -6,5 +6,6 @@
   <div class="relative min-h-screen">
     <SectionHeader />
     <SectionHero />
+    <SectionCategory />
   </div>
 </template>
