@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <div class="relative border min-h-screen">
+  <div class="relative min-h-screen">
     <SectionHeader />
+    <SectionHero />
   </div>
 </template>
