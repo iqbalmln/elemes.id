@@ -30,7 +30,7 @@ const menus = ref([
 </script>
 
 <template>
-  <header class="absolute top-0 left-0 px-28 py-6 w-full flex justify-between items-center">
+  <header class="absolute z-20 top-0 left-0 px-28 py-6 w-full flex justify-between items-center">
     <figure>
       <img src="~/assets/image/logo.png" alt="">
     </figure>
