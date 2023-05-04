@@ -19,7 +19,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-icon'
+    'nuxt-icon',
+    'nuxt-swiper'
   ],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
