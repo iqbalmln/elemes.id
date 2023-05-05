@@ -57,6 +57,8 @@ onMounted(() => {
   }
 })
 
+const tes = 'cupcake'
+
 
 </script>
 
@@ -92,7 +94,9 @@ onMounted(() => {
               class="text-center h-12"
               :class="`bg-[${category.color}]`"
             >
-              <img :src="`/_nuxt/assets/image/icons/${category.menu}.png`" class="w-full h-full object-contain rounded-lg">
+            <img
+              :src="`images/icons/${category.menu}.png`"
+              class="w-full h-full object-contain rounded-lg">
             </figure>
             <div class="flex flex-col text-center">
               <p>{{ category.name }}</p>

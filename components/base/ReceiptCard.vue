@@ -18,7 +18,7 @@ const stars = ref(5)
   >
     <span class="absolute top-0 left-0 rounded-md w-full h-full -z-10 opacity-90" :class="background" />    
     <figure class="rounded-md w-[120px]">
-      <img class="w-full h-full rounded-md object-cover" :src="`/_nuxt/assets/image/menus/${image}.png`" alt="">
+      <img class="w-full h-full rounded-md object-cover" :src="`images/menus/${image}.png`" alt="">
     </figure>
     <div>
       <p class="text-[26px]">{{ title }}</p>
