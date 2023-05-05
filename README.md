@@ -1,6 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Elemes Id Frontend Test
+Creating landing page using Nuxt, responsive in **Laptop** and **Mobile** device
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Deploy
+Deployed with [Vercel](https://elemes-mhn6ddpax-iqbalmln.vercel.app), Click to check the result.
+
+## Stack
+1. Nuxt
+2. Typescript
+3. Tailwind
+4. Swiper
 
 ## Setup
 
@@ -38,5 +46,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
