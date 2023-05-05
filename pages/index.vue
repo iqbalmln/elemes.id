@@ -7,5 +7,6 @@
     <SectionHeader />
     <SectionHero />
     <SectionCategory />
+    <SectionTrending />
   </div>
 </template>
