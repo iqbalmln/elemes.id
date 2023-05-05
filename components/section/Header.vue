@@ -30,11 +30,11 @@ const menus = ref([
 </script>
 
 <template>
-  <header class="absolute z-20 top-0 left-0 px-28 py-6 w-full flex justify-between items-center">
+  <header class="absolute z-20 top-0 left-0 px-8 lg:px-28 py-6 w-full flex justify-between items-center bg-white lg:bg-transparent border-b lg:border-none">
     <figure>
-      <img src="~/assets/image/logo.png" alt="">
+      <img src="~/assets/image/logo.png" class="w-32 lg:w-auto" alt="">
     </figure>
-    <nav>
+    <nav class="hidden md:block">
       <ul class="flex gap-8">
         <li
           v-for="menu in menus"
@@ -45,8 +45,8 @@ const menus = ref([
       </ul>
     </nav>
     <div class="flex gap-6 items-center">
-      <NuxtLink to="/">Masuk</NuxtLink>
-      <BaseButton title="Daftar Sekarang" color="green" />
+      <NuxtLink to="/" class="hidden lg:block">Masuk</NuxtLink>
+      <BaseButton title="Daftar Sekarang" color="green" class="text-sm lg:text-base" />
     </div>
   </header>
 </template>
