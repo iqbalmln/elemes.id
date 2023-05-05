@@ -68,9 +68,9 @@ const receipts = ref([
 </script>
 
 <template>
-  <section class="px-28 py-[50px] flex flex-col gap-[50px]">
+  <section class="px-8 lg:px-28 py-[50px] flex flex-col gap-[50px]">
     <BaseHeading title="Browse Our Trending" subtitle="Receipt" />
-    <div class="grid grid-cols-4 gap-5 grid-rows-2">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:grid-rows-2">
       <BaseReceiptCard
         v-for="receipt in receipts"
         :key="receipt.id"
@@ -81,6 +81,6 @@ const receipts = ref([
         :favorite="receipt.favorite"
       />
     </div>
-    <BaseButton title="All Receipt" color="green" class="text-center" />
+    <BaseButton title="All Receipt" color="green" class="text-center hidden lg:block" />
   </section>
 </template>
