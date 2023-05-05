@@ -44,7 +44,7 @@ const categories = ref([
 </script>
 
 <template>
-  <section class="h-[400px] pl-28 flex flex-col gap-12">
+  <section class="pl-28 py-[50px] flex flex-col gap-12">
     <BaseHeading title="Browse our Category" subtitle="Receipt" />
     <div class="py-4">
       <Swiper
