@@ -8,5 +8,6 @@
     <SectionHero />
     <SectionCategory />
     <SectionTrending />
+    <SectionFooter />
   </div>
 </template>
