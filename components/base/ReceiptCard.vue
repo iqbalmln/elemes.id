@@ -12,7 +12,7 @@ const stars = ref(5)
 
 <template>
   <div
-    class="relative py-8 px-6 flex flex-col gap-4 shadow-card rounded-md
+    class="relative py-6 lg:py-8 px-5 lg:px-6 flex flex-col gap-4 shadow-card rounded-md
     haha hover:transform hover:scale-100"
     :class="background"
   >
