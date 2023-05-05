@@ -61,7 +61,7 @@ const menus = ref(['Home', 'Promotions', 'Others'])
     <span class="text-center uppercase text-xs text-[#757575] font-normal">© 2021 Elemes id. All rights reserved</span>
   </footer>
   <footer class="flex justify-between lg:hidden sticky bottom-0 left-0 z-50 px-8 py-5 bg-white">
-    <span v-for="menu in menus" class="text-[#757575] flex flex-col items-center">
+    <span v-for="menu in menus" class="text-[#757575] flex flex-col items-center text-sm">
       <Icon name="bx:menu" class="text-2xl" />
       {{ menu }}
     </span>
