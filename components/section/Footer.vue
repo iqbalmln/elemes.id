@@ -1,10 +1,11 @@
 <script setup lang="ts">
 const categories = ref(['Cupcake', 'Pizza', 'Kebab', 'Salmon', 'Doughnut'])
 const abouts = ref(['About us', 'FAQ', 'Report Problem'])
+const menus = ref(['Home', 'Promotions', 'Others'])
 </script>
 
 <template>
-  <footer class="px-28 pt-48 pb-8 flex flex-col gap-12">
+  <footer class="hidden px-28 pt-48 pb-8 lg:flex flex-col gap-12">
     <div class=" flex gap-24 py-[50px] px-16 rounded-[20px] bg-green-tertiary">
       <div class="flex flex-col basis-[30%] gap-10">
         <figcaption class="flex flex-col gap-5">
@@ -58,5 +59,11 @@ const abouts = ref(['About us', 'FAQ', 'Report Problem'])
       </div>
     </div>
     <span class="text-center uppercase text-xs text-[#757575] font-normal">© 2021 Elemes id. All rights reserved</span>
+  </footer>
+  <footer class="flex justify-between lg:hidden sticky bottom-0 left-0 z-50 px-8 py-5 bg-white">
+    <span v-for="menu in menus" class="text-[#757575] flex flex-col items-center">
+      <Icon name="bx:menu" class="text-2xl" />
+      {{ menu }}
+    </span>
   </footer>
 </template>
