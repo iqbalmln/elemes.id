@@ -3,6 +3,12 @@ import { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
+const windowWidth = ref(0)
+
+
+const slidePerView = ref(5)
+const swiperControl = ref(true)
+
 const categories = ref([
   {
     id: 0,
@@ -41,10 +47,21 @@ const categories = ref([
   },
 ])
 
+onMounted(() => {
+  if (process.client) {
+    windowWidth.value = window.innerWidth
+    if(windowWidth.value < 600) {
+      slidePerView.value = 2
+      swiperControl.value = !swiperControl.value
+    }
+  }
+})
+
+
 </script>
 
 <template>
-  <section class="pl-28 py-[50px] flex flex-col gap-12">
+  <section class="pl-8 lg:pl-28 py-[50px] flex flex-col gap-12">
     <BaseHeading title="Browse our Category" subtitle="Receipt" />
     <div class="py-4">
       <Swiper
@@ -56,11 +73,11 @@ const categories = ref([
         :effect="'creative'"
         :loop="true"
         :space-between="24"
-        :slides-per-view="5"
+        :slides-per-view="slidePerView"
         class="flex flex-col gap-4"
       >
         <div class="flex justify-end">
-          <SwiperControls />
+          <SwiperControls v-if="swiperControl" />
         </div>
         <swiper-slide
           v-for="category in categories.concat(categories)"
